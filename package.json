@@ -1,0 +1,7 @@
+{
+    "name": "nasa-clipper-tactical-logger",
+    "dependencies": {
+        "serialport": "4.0.7",
+        "nmea-simple": "2.2.0"
+    }
+}
