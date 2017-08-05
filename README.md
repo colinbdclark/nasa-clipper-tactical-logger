@@ -4,11 +4,11 @@ This repository contains a simple Node.js script to print out the non-compliant 
 
 ## Details
 
-It appears that the NASA Clipper Tactical masthead unit sends data that does not comply with the NMEA 0183 specification. In particular, it appears to terminate sentences with the <code><LF><NULL></code> (i.e. [0x0d, 0x00]) byte sequence, whereas I believe most NMEA 0183 parsers expect <code><CR><LF></code> as the sentence terminator.
+It appears that the NASA Clipper Tactical masthead unit sends data that does not comply with the NMEA 0183 specification. In particular, it appears to terminate sentences with the <code>< LF >< NULL ></code> (i.e. <code>[0x0d, 0x00]</code>) byte sequence, whereas I believe most NMEA 0183 parsers expect <code>< CR >< LF ></code> as the sentence terminator.
 
-I don't have access to the standard, but a number of sources suggest that <code><CR><LF></code> is expected as the line terminator.
+I don't have access to the standard, but a number of sources suggest that <code>< CR >< LF ></code> is expected as the line terminator.
 
-> Sentences are terminated by a <code><CR><LF></code> sequence.
+> Sentences are terminated by a <code>< CR >< LF ></code> sequence.
 http://www.catb.org/gpsd/NMEA.html#_nmea_encoding_conventions
 http://www.catb.org/gpsd/NMEA.html#_mwv_wind_speed_and_angle
 
