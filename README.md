@@ -17,7 +17,7 @@ http://freenmea.net/docs
 
 ## Open Source NMEA Parser Implementations
 
-The following open source NMEA parser implementations seem unable to handle the Clipper Tactical's nonstandard sentence terminators, and expect to receive <code><CR><LF></code>:
+The following open source NMEA parser implementations seem unable to handle the Clipper Tactical's nonstandard sentence terminators, and expect to receive <code>< CR >< LF ></code>:
 
  * [OpenCPN](https://github.com/OpenCPN/OpenCPN/blob/5a20bd502cfbe8ab8fc084126b17d90c6ec8df15/src/datastream.cpp#L555)
  * [vYacht](https://github.com/vyacht/stm32/blob/master/vynmea/nmea0183.c#L150-L162)
